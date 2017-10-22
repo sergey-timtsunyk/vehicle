@@ -1,0 +1,32 @@
+{
+  "name": "sergey-timtsunyk/vehicle",
+  "description": "",
+  "type": "library",
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "Serhii T",
+      "role": "developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Vehicle\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Vehicle\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": ">=7.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~6.4.3"
+  },
+  "bin": [
+    "vendor/bin/phpunit"
+  ]
+}
