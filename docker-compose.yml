@@ -1,0 +1,12 @@
+version: '3'
+services:
+  php-cli:
+    image: php:7.1-cli
+    volumes:
+      - ./:/var/www/test-vehicle:cached
+    working_dir: /var/www/test-vehicle
+    command: >
+      sh -c "
+      curl -sS https://getcomposer.org/installer | php
+      && mv composer.phar /usr/local/bin/composer
+      && composer install --prefer-dist --no-dev"
